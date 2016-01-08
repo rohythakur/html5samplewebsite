@@ -1,2 +1,2 @@
-# websiteonhtml5
-a website based on html5 website 
+# sample website developed on html5
+a website based on html5  
