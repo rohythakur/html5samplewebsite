@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://lamina17.info/code/html5/code/hover_form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<style>
+.flip{ width:240px; height:200px; border-radius:20px; float:left;margin:20px 20% 80px 20px;}
+
+.flip > .front{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:transparent;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip > .back{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background:transparent;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip:hover > .front{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip:hover > .back{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+h1{
+line-height:30%;
+}
+</style>
+</head>
+<body>
+<div class="flip">
+<div class="back"><br><br><br><p id="1">
+
+  </p><form>      
+  <input name="name" type="text" class="feedback-input" placeholder="Username">   
+  <input name="password" type="password" class="feedback-input" placeholder="Password">
+
+  <input type="submit" value="Login">
+  </form>
+  
+  
+  <p></p></div>
+  <div class="front"><p>
+  
+
+  </p><h1><font color="skyblue" size="15">Login<br><br><br><br>
+       Click Here!</font></h1>
+
+  
+  <p></p></div>
+</div>
+
+
+
+
+<div class="flip">
+  <div class="back"><br><br><br><p id="1">
+
+  </p><form>      
+  <input name="name" type="text" class="feedback-input" placeholder="Username">   
+    <input name="name" type="text" class="feedback-input" placeholder="Email">  
+	  <input name="name" type="text" class="feedback-input" placeholder="phone no">  
+  <input name="password" type="password" class="feedback-input" placeholder="Password">
+
+  <input type="submit" value="signup">
+  </form>
+  
+  
+  <p></p></div>
+  <div class="front">
+  <p> 
+   </p><h1><font color="skyblue" size="14">Sign Up<br><br><br><br>
+   Click Here!</font></h1>
+   <p></p></div>
+</div>
+
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:palegreen;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size: 21px;
+  border-radius: 12px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid skyblue;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #e7e7e7; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+opacity:0.83;
+  font-family: 'Montserrat', Comic sans ms, Helvetica, sans-serif;
+  width: 100%;
+ margin-top:-4px;
+  font-weight:700;
+  background:#CC6666;
+
+  font-size:26px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+   border-radius:15px;
+  border:0;
+  cursor:pointer;
+  color:#e7e7e7;
+}
+[type="submit"]:hover { background:#CC4949; }
+</style>
+
+
+
+
+
+</body></html>
